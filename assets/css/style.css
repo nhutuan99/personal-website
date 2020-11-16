@@ -48,11 +48,6 @@
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
     }
-
-    body{
-        overflow-x:hidden;
-        overflow-y:hidden;
-    };
 }
 
 
@@ -591,6 +586,11 @@ img{
 /* MEDIA QUERIES */
 
 @media screen and (min-width : 768px){
+
+    body{
+        overflow-x: visible;
+    }
+
     .home__button{
         width: initial;
     }
