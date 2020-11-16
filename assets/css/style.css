@@ -485,9 +485,10 @@ img{
 }
 
 .project__title{
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     color: var(--first-color-lighten);
-    padding: 0 2rem;
+    padding: 0 2.5rem;
+    text-align: center;
 }
 
 .projects__img:hover .project__data{
