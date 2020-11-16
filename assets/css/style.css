@@ -503,7 +503,7 @@ img{
     width: 100%;
     padding: 1rem;
     outline: none;
-    border: none;
+    border: 0.05px solid #999;
     background-color: var(--first-color-light);
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
@@ -673,18 +673,30 @@ img{
         padding: 0;
     }
 
-    .skills__container{
+
+    .skills__content{
         text-align: center;
     }
 
-    .skills__data{
-        padding: 0;
-        margin-left: 200px;
-        text-align: left;
+    .skills__data-box{
+        text-align: center;
+        position: relative;
+        right: -200px;
     }
+
+    
     
     .home__container{
         height: 100vh;
+    }
+    
+    .education__year,.education__university,.education__race{
+        text-align: center;
+        padding: 0 100px;
+    }
+
+    .education__box{
+        text-align: center;
     }
 
     .section{
