@@ -48,6 +48,10 @@
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
     }
+
+    body{
+        overflow-x:hidden;
+    };
 }
 
 
