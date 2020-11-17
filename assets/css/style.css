@@ -594,21 +594,24 @@ img{
     
 
     #button{
+        -webkit-animation: animate 1s;
         animation: animate 1s;
     }
 
     #fb,#insta,#github,#gg{
+        -webkit-animation: animate 2s;
         animation: animate 2s;
     }
 
-    @keyframes animate {
+    @-webkit-keyframes animate {
         from{
-            transform: scale(0);
+            -webkit-transform: scale(0);
         }
         to{
-            transform: scale(1);
+            -webkit-transform: scale(1);
         }
     }
+
     .home__button{
         width: initial;
     }
@@ -677,16 +680,16 @@ img{
         animation: animate 1s;
     }
 
+    #fb,#insta,#github,#gg{
+        animation: animate 2s;
+    }
+
     @keyframes animate {
         from{
-            transform: scaleX(0);
-            transition: transform 0.3s cubic-bezier(.17,.67,.83,.67);
-            transform-origin: center right;
+            transform: scale(0);
         }
         to{
-            transform : scaleX(1);
-            transform-origin: center left;
-            transition: transform 0.3s cubic-bezier(.17,.67,.83,.67);
+            transform: scale(1);
         }
     }
 
