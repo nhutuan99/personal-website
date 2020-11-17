@@ -198,7 +198,7 @@ img{
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--fist-color-lighten);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Nav */
@@ -591,8 +591,8 @@ img{
     }
     
     #button{
-        animation: animate 1s infinite;
-        -webkit-animation: animate 1s infinite;
+        animation: animate 1s;
+        -webkit-animation: animate 1s;
     }
 
     #fb,#insta,#github,#gg{
