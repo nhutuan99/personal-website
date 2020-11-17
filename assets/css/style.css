@@ -374,10 +374,8 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.skills__data{
+.skills__data-1,.skills__data-2,.skills__data-3,.skills__data-4,.skills__data-5,.skills__data-6,.skills__data-7{
     position: relative;
-    display: flex;
-    justify-content: space-between;
     margin: 0 var(--mb-2);
     margin-bottom: var(--mb-2);
 }
@@ -592,15 +590,14 @@ img{
         overflow-x: visible;
     }
     
-
     #button{
-        -webkit-animation: animate 1s;
-        animation: animate 1s;
+        animation: animate 1s infinite;
+        -webkit-animation: animate 1s infinite;
     }
 
     #fb,#insta,#github,#gg{
-        -webkit-animation: animate 2s;
         animation: animate 2s;
+        -webkit-animation: animate 2s;
     }
 
     @-webkit-keyframes animate {
@@ -744,13 +741,11 @@ img{
     .skills__data-box-1,
     .skills__data-box-2,
     .skills__data-box-3{
-        padding: 0 70px;
+        padding: 0;
         display: grid;
         grid-template-rows: repeat(3,1fr);
-        grid-gap: 20px;
         text-align: center;
         grid-template-columns: repeat(3,1fr);
-        margin: 0 auto;
     }
     .skills__data-1{
         grid-column-start: 2;
