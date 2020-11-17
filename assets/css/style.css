@@ -673,6 +673,23 @@ img{
         padding-left: var(--nav-width);
     }
 
+    #button{
+        animation: animate 1s;
+    }
+
+    @keyframes animate {
+        from{
+            transform: scaleX(0);
+            transition: transform 0.3s cubic-bezier(.17,.67,.83,.67);
+            transform-origin: center right;
+        }
+        to{
+            transform : scaleX(1);
+            transform-origin: center left;
+            transition: transform 0.3s cubic-bezier(.17,.67,.83,.67);
+        }
+    }
+
     .l-header{
         width: 0;
     }
