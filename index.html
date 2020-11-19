@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Personal Portfolio | Tuan Truong</title>
 
 </head>
 
 <body>
     <!---== HEADER ===-->
+    <div class="home__mode">
+        <input type="checkbox" class="home__mode-checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="bx bx-sun"></i>
+            <i class="bx bxs-sun"></i>
+            <div class="home__mode-ball"></div>
+        </label>
+    </div>
+
     <header class="l-header">
         <nav class="nav bd-grid">
             <div class="nav__toggle" id="nav-toggle">
@@ -45,13 +55,14 @@
         <!-- HOME -->
         <section class="home" id="home">
             <div class="home__container bd-grid">
+                
                 <div class="home__data">
                     <div class="home__img">
                         <img src="assets/img/Capture-1-removebg-preview.png" alt="avatar">
                     </div>
 
-                    <h1 class="home__title">Tuan Truong</h1>
-                    <span class="home__profession">Web Developer Student</span>
+                    <h1 class="home__title dark">Tuan Truong</h1>
+                    <span class="home__profession">Web Developer Student</span>                  
 
                     <div class="home__social">
                         <a href="https://www.facebook.com/nhutuan.truong.9/" class="home__social-link"><i id="fb" class="bx bxl-facebook"></i></a>

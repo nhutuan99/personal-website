@@ -1,3 +1,9 @@
+/* BACKGROUND MODE */
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change',() =>{
+    document.body.classList.toggle('dark');
+})
+
 /* MENU SHOW YOUR HIDDEN */
 
 const navMenu = document.getElementById('nav-menu'),
