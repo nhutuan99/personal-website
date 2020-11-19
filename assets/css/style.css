@@ -59,8 +59,10 @@
 .home__mode{
     display: flex;
     align-items: center;
-    padding: 30px 0 0 0;
+    padding: 0;
     margin-left: calc(90% - var(--mb-5));
+    position: relative;
+    top: 30px;
 }
 /* CSS MODE BUTTON */
 .label{
