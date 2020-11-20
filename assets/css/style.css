@@ -163,7 +163,7 @@
     width: 100%;
 }
 
-*,::before,::after{
+*{
     box-sizing: border-box;
 }
 
@@ -181,15 +181,13 @@ body{
     line-height: 1.6;
 }
 
-.dark{
-    --background-dark: #2a2c2d;
-    --color-dark: var(--text-color-light);
+body.dark-mode{
+    filter: invert(1) hue-rotate(360deg);
+    background-color: #313131;
 }
 
-body.dark{
-    background-color: var(--background-dark) !important;
-    color: var(--color-dark) !important;
-    z-index: 0;
+.invert {
+    filter: invert(1) hue-rotate(360deg);
 }
 
 h1,h2,h3,p{
