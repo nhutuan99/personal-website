@@ -10,21 +10,15 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>Personal Portfolio | Tuan Truong</title>
 
 </head>
 
 <body>
         <!---== HEADER ===-->
-    <div class="home__mode">
-        <input type="checkbox" class="home__mode-checkbox" id="checkbox">
-        <label for="checkbox" class="label">
-            <i class="bx bx-sun inverted"></i>
-            <i class="bx bxs-sun inverted"></i>
-            <div class="home__mode-ball"></div>
-        </label>
-    </div>
-
     <header class="l-header">
         <nav class="nav bd-grid">
             <div class="nav__toggle" id="nav-toggle">
@@ -55,13 +49,22 @@
         <!-- HOME -->
         <section class="home" id="home">
             <div class="home__container bd-grid">
+
+                <div class="home__mode">
+                    <input type="checkbox" class="home__mode-checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="bx bx-sun inverted"></i>
+                        <i class="bx bxs-sun inverted"></i>
+                        <div class="home__mode-ball"></div>
+                    </label>
+                </div>
                 
                 <div class="home__data">
                     <div class="home__img">
                         <img class="inverted" src="assets/img/Capture-1-removebg-preview.png" alt="avatar">
                     </div>
 
-                    <h1 class="home__title dark">Tuan Truong</h1>
+                    <h1 class="home__title">Tuan Truong</h1>
                     <span class="home__profession">Web Developer Student</span>                  
 
                     <div class="home__social">
@@ -288,15 +291,18 @@
            <h2 class="section-title">Get In Touch</h2>
 
            <div class="contact__container bd-grid">
-               <form action="" class="contact__form">
+            
+                <form id="gform" method="POST" class="contact__form" data-email="tintphcm@gmail.com"
+                     action="https://script.google.com/macros/s/AKfycbxkG5aYmGlZ1HoWIpgGLHdA12brEh7LNjbQULQ16kgwrp8IQHw/exec">
+
                    <div class="contact__inputs">
-                       <input type="text" class="contact__input" placeholder="Name">
-                       <input type="mail" class="contact__input" placeholder="Email">
-                       <input type="text" class="contact__input" placeholder="Phone" maxlength="11">
+                       <input id="name" name="name" type="text" class="contact__input" placeholder="Name">
+                       <input id="email" name="email" type="email" class="contact__input" value="" placeholder="Email">
+                       <input id="phone" name="phone" type="text" class="contact__input" placeholder="Phone" maxlength="11">
                    </div>
 
-                   <textarea name="message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                   <input type="submit" value="Send Message" class="button contact__button">
+                   <textarea name="message" id="message" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                   <input id="gformbtn" type="submit" value="Send Message" class="button contact__button">
                </form>
 
 
@@ -343,6 +349,49 @@
 
     <script src="assets/js/main.js"></script>
     
+    <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js">
+    </script>
+
+    <script type="text/javascript">
+        $(gformbtn).click(function(){
+            swal({
+                title: "We'll be friends from here!",
+                text: "Thank you for your visiting",
+                icon: "success",
+                button: "Close",
+                timer: 10000,
+            });
+        })
+    </script>
+
+    <script type="text/javascript">
+        $('#gform').submit(function(e){
+            e.preventDefault();
+            var formData = $('#gform').serialize();
+            $.ajax({
+                type        : 'POST', 
+                url         : 'https://script.google.com/macros/s/AKfycbxkG5aYmGlZ1HoWIpgGLHdA12brEh7LNjbQULQ16kgwrp8IQHw/exec',
+                data        : formData, 
+                dataType    : 'json',
+                encode      : true
+            }).done(function(data) {
+                if(data.result == 'success') {
+                    // Form submission was successful and accepted by google. 
+                    // You can show your success message here
+    
+                } else {
+                    // Form was submission failed for some reasons.
+                    // You can examine the response from google to see whats missing
+    
+                }
+            }).fail(function (jqXHR,status,err) {
+                // Form submission failed due to some network or other errors
+                // I am alerting the error but you can do anything else with it     
+                alert(err);
+            });
+        });
+    </script>
 
 </body>
 

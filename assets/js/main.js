@@ -4,7 +4,7 @@ checkbox.addEventListener('change',() =>{
     document.body.classList.toggle('dark-mode');
 
     document.querySelectorAll('.inverted').forEach((result) => {
-        result.classList.toggle('invert')
+        result.classList.toggle('invert');
     })
 })
 
