@@ -114,18 +114,18 @@
 }
 
 .home__img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: var(--mb-2);
-    
 }
 
 .home__img img{
-    width: 155px;
-    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home__title{
