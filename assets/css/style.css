@@ -23,6 +23,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
+    --h4-font-size: 0.875rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.938rem;
     --smaller-font-size: 0.938rem;
@@ -183,7 +184,7 @@ body{
 
 body.dark-mode{
     filter: invert(1) hue-rotate(360deg);
-    background-color: #313131
+    background-color: #313131;
 }
 
 .invert {
@@ -451,7 +452,7 @@ img{
 }
 
 .education__year,.education__race{
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     margin-bottom: 0.5rem;
 }
 
