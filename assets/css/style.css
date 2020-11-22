@@ -58,7 +58,6 @@
 }
 
 .home__mode{
-    display: flex;
     align-items: center;
     padding: 0;
     margin-left: calc(90% - var(--mb-5));
@@ -183,9 +182,13 @@ body{
     line-height: 1.6;
 }
 
+
+.dark-mode{
+    background-color: #313131;
+}
+
 body.dark-mode{
     filter: invert(1) hue-rotate(360deg);
-    background-color: #313131;
 }
 
 .invert {
@@ -656,7 +659,8 @@ img{
 
 @media screen and (min-width : 768px){
 
-    *{
+    body{
+        margin: 0;
         overflow-x: visible;
     }
     
