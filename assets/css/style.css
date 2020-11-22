@@ -182,8 +182,8 @@ body{
 }
 
 body.dark-mode{
-    filter: invert(1) hue-rotate(360deg);
-    background-color: #313131;
+    filter: invert(1) hue-rotate(400deg);
+    background-color: #313131
 }
 
 .invert {
@@ -637,7 +637,19 @@ img{
     font-size: var(--smaller-font-size);
     color: var(--first-color-darken);
 }
-
+.form-group{
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+.form-message{
+    text-align: left;
+}
+/* FORM */
+.invalid{
+    font-size: var(--smaller-font-size);
+    color: red;
+}
 /* MEDIA QUERIES */
 
 @media screen and (min-width : 768px){
