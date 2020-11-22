@@ -182,7 +182,7 @@ body{
 }
 
 body.dark-mode{
-    filter: invert(1) hue-rotate(400deg);
+    filter: invert(1) hue-rotate(360deg);
     background-color: #313131
 }
 
