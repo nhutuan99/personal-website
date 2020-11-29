@@ -746,6 +746,10 @@ img{
         border-radius: 0.5rem;
     }
 
+    .projects__img{
+        padding-top: 1rem;
+    }
+
 }
 
 @media screen and (min-width : 1024px){
