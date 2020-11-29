@@ -187,6 +187,18 @@ body{
     line-height: 1.6;
 }
 
+.dark-mode{
+    background-color: var(--first-color-dark-mode);
+}
+
+body.dark-mode{
+    filter: invert(1) hue-rotate(360deg);
+}
+
+.invert{
+    filter: invert(1) hue-rotate(360deg);
+}
+
 h1,h2,h3,p{
     margin: 0;
 }
@@ -655,15 +667,6 @@ img{
         margin: 0;
         overflow-x: visible;
     }
-
-    .dark-mode{
-        filter: invert(1) hue-rotate(360deg);
-        background-color: var(--first-color-dark-mode);
-    }
-    
-    .invert{
-        filter: invert(1) hue-rotate(360deg);
-    }
     
     .home__container.dark-mode{
         color: var(--first-color-lighten);
@@ -750,15 +753,6 @@ img{
     body{
         margin: 0;
         padding-left: var(--nav-width);
-    }
-    
-
-    .dark-mode{
-        filter: invert(1) hue-rotate(360deg);
-        background-color: var(--first-color-dark-mode);
-    }
-    .invert{
-        filter: invert(1) hue-rotate(360deg);
     }
     
     #button{

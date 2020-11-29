@@ -53,11 +53,10 @@ function scrollActive(){
 
 /* BACKGROUND MODE */
 
-const checkbox = document.querySelector('#checkbox');
-const homeContainer = document.getElementById('home__container');
+const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change',() =>{
     document.body.classList.toggle('dark-mode');
-    homeContainer.classList.toggle('dark-mode');
+
     document.querySelectorAll('.inverted').forEach((result) => {
         result.classList.toggle('invert');
     })
