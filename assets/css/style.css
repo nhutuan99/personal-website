@@ -745,10 +745,6 @@ img{
         padding: 3rem 0;
         border-radius: 0.5rem;
     }
-    .inverted{
-        padding-top: 1rem;
-    }
-
 }
 
 @media screen and (min-width : 1024px){
