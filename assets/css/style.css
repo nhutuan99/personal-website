@@ -58,16 +58,11 @@
     align-items: center;
 }
 
-.home__container.dark-mode{
-    color: var(--first-color-lighten);
-}
-
 .home__mode{
-    align-items: center;
-    padding: 0;
-    margin-left: calc(90% - var(--mb-5));
-    position: relative;
-    top: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 80px;
 }
 /* CSS MODE BUTTON */
 .label{
@@ -668,10 +663,6 @@ img{
         overflow-x: visible;
     }
     
-    .home__container.dark-mode{
-        color: var(--first-color-lighten);
-    }
-
     #button{
         animation: animate 1s;
         -webkit-animation: animate 1s;
@@ -754,6 +745,11 @@ img{
         padding-left: var(--nav-width);
     }
     
+    .home__mode{
+        right: 80px;
+        top: 80px;
+    }
+
     #button{
         animation: animate 1s;
     }
