@@ -2,11 +2,12 @@
 
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change',() =>{
-    document.body.classList.toggle('dark-mode');
+    console.log( document.body.classList)
+     document.body.classList.toggle('dark-mode');
 
-    document.querySelectorAll('.inverted').forEach((result) => {
-        result.classList.toggle('invert');
-    })
+    // document.querySelectorAll('.inverted').forEach((result) => {
+    //     result.classList.toggle('invert');
+    // })
 })
 /* MENU SHOW YOUR HIDDEN */
 

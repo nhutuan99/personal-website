@@ -511,12 +511,11 @@ img{
     row-gap: 2rem;
 }
 
-.projects__img{
+.project__img{
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
 }
-
 .project__data{
     position: absolute;
     bottom: -100%;
@@ -530,6 +529,9 @@ img{
     background-color: rgba(204, 75, 44, 0.7);
     border-radius: 0.5rem;
     transition: 0.3s;
+}
+.project__img:hover .project__data{
+    bottom: 0;
 }
 
 .project__link{
@@ -549,9 +551,7 @@ img{
     text-align: center;
 }
 
-.projects__img:hover .project__data{
-    bottom: 0;
-}
+
 
 /* CONTACT */
 .contact__container{
