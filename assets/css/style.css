@@ -64,6 +64,9 @@
     right: 20px;
     top: 80px;
 }
+.l-main{
+    padding-top: 20px;
+}
 /* CSS MODE BUTTON */
 .label{
     background-color: #111;
@@ -663,6 +666,7 @@ img{
         overflow-x: visible;
     }
     
+    
     #button{
         animation: animate 1s;
         -webkit-animation: animate 1s;
@@ -744,13 +748,7 @@ img{
         margin: 0;
         padding-left: var(--nav-width);
     }
-    
-    .home__mode{
-        padding-top: 10px;
-        right: 80px;
-        top: 80px;
-    }
-
+   
     #button{
         animation: animate 1s;
     }
