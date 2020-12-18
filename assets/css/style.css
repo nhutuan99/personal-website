@@ -437,7 +437,7 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.skills__data-1,.skills__data-2,.skills__data-3,.skills__data-4,.skills__data-5,.skills__data-6,.skills__data-7{
+.skills__data-1,.skills__data-2,.skills__data-3,.skills__data-4,.skills__data-5,.skills__data-6,.skills__data-7,skills__data-8{
     position: relative;
     margin: 0 var(--mb-2);
     margin-bottom: var(--mb-2);
@@ -666,6 +666,9 @@ img{
         overflow-x: visible;
     }
     
+    .home__mode{
+        display: block;
+    }
     
     #button{
         animation: animate 1s;
@@ -748,7 +751,10 @@ img{
         margin: 0;
         padding-left: var(--nav-width);
     }
-   
+    
+    .home__mode{
+        display: none;
+    }
     #button{
         animation: animate 1s;
     }
@@ -850,16 +856,22 @@ img{
     .skills__data-5{
         grid-column-start: 2;
         grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .skills__data-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 1;
     }
-    .skills__data-6{
+    .skills__data-7{
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 2;
     }
-    .skills__data-7{
+    .skills__data-8{
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 3;
