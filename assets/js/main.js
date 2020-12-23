@@ -2,8 +2,7 @@
 
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change',() =>{
-    console.log( document.body.classList)
-     document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode');
 
     document.querySelectorAll('.inverted').forEach((result) => {
         result.classList.toggle('invert');
