@@ -41,7 +41,7 @@ const sections = document.querySelectorAll('section[id]')
 window.addEventListener('scroll',scrollActive)
 
 function scrollActive(){
-    const scrollY = window.pageXOffset
+    const scrollY = window.pageXOffset;
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
@@ -59,6 +59,7 @@ function scrollActive(){
         }
     })
 }
+
 
 
 

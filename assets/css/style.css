@@ -658,6 +658,12 @@ img{
     color: red;
 }
 /* MEDIA QUERIES */
+@media screen and (max-width : 768px){
+    .littlething{
+        position: relative;
+        top: 30px;
+    }
+}
 
 @media screen and (min-width : 768px){
 
